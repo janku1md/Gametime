@@ -1,51 +1,164 @@
-/*
-Error: Invalid CSS after "  clear: both;x": expected "{", was "}"
-        on line 49 of styles/main.scss
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-44:   background-repeat: no-repeat;
-45:   display: inline-block;
-46:   position: relative;
-47:   margin-bottom: 50px;
-48:   clear: both;x
-49: }
-50: 
-51: .columnleft {
-52:   height: 400px;
-53:   width: 156px;
-54:   display: block;
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
 
-Backtrace:
-styles/main.scss:49
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1165:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1101:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:1096:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:641:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:661:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:642:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:635:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:660:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:653:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/scss/parser.rb:42:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:393:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.11/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  clear: both;x\": expected \"{\", was \"}\"\A         on line 49 of styles/main.scss\A \A 44:   background-repeat: no-repeat;\A 45:   display: inline-block;\A 46:   position: relative;\A 47:   margin-bottom: 50px;\A 48:   clear: both;x\A 49: }\A 50: \A 51: .columnleft {\A 52:   height: 400px;\A 53:   width: 156px;\A 54:   display: block;"; }
+body {
+  margin: 0 auto;
+  display: block;
+  text-align: center; }
+
+.container {
+  width: 960px;
+  padding: 10px;
+  margin: 50px auto;
+  position: relative; }
+
+.firstpage {
+  height: 900px;
+  width: 900px;
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 50px;
+  margin-bottom: 150px; }
+
+.intro1, .intro2 {
+  width: 900px;
+  background-image: url("../images/typebackground.jpg");
+  background-repeat: no-repeat;
+  /* border-radius: 5px; */
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  display: block;
+  text-align: center;
+  /* margin-left: 100px; */
+  margin-top: 150px;
+  font-family: 'Frijole', cursive;
+  font-size: 40px;
+  padding: 15px; }
+
+.letspickem {
+  height: 290px;
+  width: 207px;
+  margin-top: 150px;
+  background-image: url("../images/letspickem.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  /*   left: 350px;
+  top: 400px; */ }
+
+.secondpage {
+  height: 900px;
+  width: 900px;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 150px;
+  clear: both; }
+
+.columnleft {
+  height: 400px;
+  width: 156px;
+  display: block;
+  vertical-align: top;
+  text-align: center;
+  float: left;
+  margin-left: 225px;
+  margin-top: 100px; }
+
+.beardillustration {
+  background-image: url("../images/beard.png");
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  height: 313px;
+  width: 156px; }
+
+.beardbutton {
+  height: 50px;
+  weight: 156px;
+  position: relative;
+  display: block;
+  background-image: url("../images/bearded_button.png");
+  background-repeat: no-repeat; }
+
+.columnright {
+  height: 400px;
+  width: 156px;
+  display: block;
+  vertical-align: top;
+  float: left;
+  margin-left: 150px;
+  text-align: center;
+  margin-top: 100px; }
+
+.shavedillustration {
+  background-image: url("../images/shaved.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+  height: 313px;
+  width: 130px; }
+
+.shavedbutton {
+  height: 50px;
+  weight: 130px;
+  position: relative;
+  display: block;
+  background-image: url("../images/shaved_button.png");
+  background-repeat: no-repeat; }
+
+.thirdpage, .fourthpage {
+  height: 900px;
+  width: 900px;
+  background-image: url("../images/background.png");
+  /* background-repeat: no-repeat; */
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 150px; }
+
+.choicebox1 {
+  height: 500px;
+  width: 700px;
+  margin-top: 100px;
+  position: relative;
+  display: inline-block;
+  /*   left: 100px;
+  top: 200px; */
+  /*   background-color: white; */ }
+
+.choicebox2 {
+  height: 500px;
+  width: 700px;
+  margin-top: 100px;
+  position: relative;
+  display: inline-block;
+  /*   left: 100px;
+  top: 200px; */
+  /*   background-color: white; */ }
+
+.playagain {
+  height: 53px;
+  width: 207px;
+  background-image: url("../images/letspickem.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  /*   left: 350px;
+  top: 400px; */ }
+
+/*# sourceMappingURL=main.css.map */

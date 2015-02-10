@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="http://fonts.googleapis.com/css?family=Frijole" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
   <title>Pickem'</title>
   <script src="scripts/main.js"></script>
@@ -8,36 +9,36 @@
   <link rel="stylesheet" href="styles///octicons/octicons.css">
 </head>
 <body>
-<div class="container">
-  <div class="firstpage">
-    <div class="intro1">
-      Welcome to Pickem'! Where you pickem' and let the man upstairs choose the winner!
-    </div>
-    <button>Let's Pickem'</button>
-    <!-- <img src="images/background.jpg"> -->
-  </div>
-
-  <div class="secondpage">
-    <div class="intro2">Welcome to Pickem'! Where you pickem' and let the man upstairs choose the winner!
-    </div>
-      <div class="columnleft">
-        <div class="beardillustration"></div>
-        <button>Beard Rule!</button>
+  <div class="container">
+    <div class="firstpage">
+      <div class="intro1">
+        Welcome to Pickem', <br />a game of chance!
       </div>
-      <div class="columnright">
-        <div class="shavedillustration"></div>
-        <button>Shaving is Awesome!</button>
+      <div class="letspickem"><!-- <img src="images/letspickem.png"> --></div>
+    </div>
+
+    <div class="secondpage">
+      <div class="intro2">All you have to do is pick the character you like, and await the outcome.
       </div>
-      <!-- <img src="images/background.jpg"> -->
+        <div class="columnleft">
+          <div class="beardillustration"></div>
+          <div class="beardbutton"></div>
+        </div>
+        <div class="columnright">
+          <div class="shavedillustration"></div>
+          <div class="shavedbutton"></div>
+        </div>
+      </div>
+
+    <div class="thirdpage">
+      <div class="choicebox1"><img src="images/winner.png"><img src="images/playagain_button.png"></div>
     </div>
 
-
-  <div class="thirdpage">
-
-    <div class="choicebox">
-
-    </div>
+    <div class="fourthpage">
+      <div class="choicebox2"><img src="images/loser.png"><img src="images/playagain_button.png"></div>
   </div>
-</div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
