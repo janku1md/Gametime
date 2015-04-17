@@ -161,4 +161,8 @@ body {
   /*   left: 350px;
   top: 400px; */ }
 
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

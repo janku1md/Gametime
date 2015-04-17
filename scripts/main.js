@@ -1,9 +1,8 @@
-(function() {
-  'use strict';
+//(function() {
+  //'use strict';
 
 
   $(document).ready(function() {
-
 
          //
         //  Start game, play again
@@ -30,9 +29,12 @@
     function letsPickem() {
       var selectedletsPickem = $('.letspickem').val();
       $(".secondpage").removeClass('hidden');
-      $(".thirdpage").toggleClass('hidden');
-      $(".fourthpage").toggleClass('hidden');
-      $("firstpage").addClass('hidden');
+      //$(".thirdpage").toggleClass('hidden');
+      //$(".fourthpage").toggleClass('hidden');
+      $(".thirdpage").addClass('hidden');
+      $(".fourthpage").addClass('hidden');
+
+      $(".firstpage").addClass('hidden');
     }
 
 
@@ -43,9 +45,12 @@
     function beardButton() {
       var selectedbeardButton = $('.beardbutton').val();
       $(".thirdpage").removeClass('hidden');
-      $(".firstpage").toggleClass('hidden');
-      $(".fourthpage").toggleClass('hidden');
-      $("secondpage").addClass('hidden');
+      //$(".firstpage").toggleClass('hidden');
+      //$(".fourthpage").toggleClass('hidden');
+      $(".firstpage").addClass('hidden');
+      $(".fourthpage").addClass('hidden');
+
+      $(".secondpage").addClass('hidden');
     }
 
 
@@ -56,12 +61,15 @@
     function shavedButton() {
       var selectedshavedButton = $('.shavedbutton').val();
       $(".fourthpage").removeClass('hidden');
-      $(".firstpage").toggleClass('hidden');
-      $(".thirdpage").toggleClass('hidden');
-      $("secondpage").addClass('hidden');
+      //$(".firstpage").toggleClass('hidden');
+      //$(".thirdpage").toggleClass('hidden');
+      $(".firstpage").addClass('hidden');
+      $(".thirdpage").addClass('hidden');
+
+      $(".secondpage").addClass('hidden');
     }
 
 
 
   });
-});
+//})();
