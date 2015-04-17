@@ -11,7 +11,7 @@
         // for you favorite character.
         // This also has the playagain button that is seen at the final screen thirdpage
         // and fourth page. This will restart the game so you can play again.
-        
+
     $(".letspickem").on("click", letsPickem);
     $(".beardbutton").on("click", beardButton);
     $(".shavedbutton").on("click", shavedButton);
@@ -29,11 +29,8 @@
     function letsPickem() {
       var selectedletsPickem = $('.letspickem').val();
       $(".secondpage").removeClass('hidden');
-      //$(".thirdpage").toggleClass('hidden');
-      //$(".fourthpage").toggleClass('hidden');
       $(".thirdpage").addClass('hidden');
       $(".fourthpage").addClass('hidden');
-
       $(".firstpage").addClass('hidden');
     }
 
@@ -45,8 +42,6 @@
     function beardButton() {
       var selectedbeardButton = $('.beardbutton').val();
       $(".thirdpage").removeClass('hidden');
-      //$(".firstpage").toggleClass('hidden');
-      //$(".fourthpage").toggleClass('hidden');
       $(".firstpage").addClass('hidden');
       $(".fourthpage").addClass('hidden');
 
@@ -61,8 +56,6 @@
     function shavedButton() {
       var selectedshavedButton = $('.shavedbutton').val();
       $(".fourthpage").removeClass('hidden');
-      //$(".firstpage").toggleClass('hidden');
-      //$(".thirdpage").toggleClass('hidden');
       $(".firstpage").addClass('hidden');
       $(".thirdpage").addClass('hidden');
 
